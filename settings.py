@@ -345,14 +345,15 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 FABRIC = {
  "SSH_USER": "vagrant", # SSH username
  "SSH_PASS": "vagrant", # SSH password (consider key-based authentication)
- "HOSTS": ['192.168.124.10' ], # List of host names or IPs.
+ #"HOSTS": ['192.168.124.10' ], # List of host names or IPs.
+ "HOSTS": ['127.0.0.1'],
  "VIRTUALENV_HOME": "/home/vagrant/", # Absolute remote path for virtualenvs
  "PROJECT_NAME": "bt", # Unique identifier for project
  "REQUIREMENTS_PATH": "requirements/requirements.txt", # Path to pip requirements, relative to project
  "GUNICORN_PORT": 8000, # Port gunicorn will listen on
  "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
  "LIVE_HOSTNAME": "example.com", # Host for public site.
- "REPO_URL": "git@github.com:tabcina/blogTabs.git",
+ "REPO_URL": "git@github.com:tabcina/meinBlog.git",
  "DB_PASS": "default", # Live database password
  "ADMIN_PASS": "default", # Live admin user password
  "SECRET_KEY": "6d52b488-a053-4288-ae7d-c809297b9c7528a04390-7a64-4739-a3f1-429966479697c6e2319b-bbd6-4119-bf3c-4d9be2a8c607"

@@ -31,14 +31,15 @@ DATABASES = {
 FABRIC = {
  "SSH_USER": "vagrant", # SSH username
  "SSH_PASS": "vagrant", # SSH password (consider key-based authentication)
- "HOSTS": ['192.168.124.10' ], # List of host names or IPs.
+ #"HOSTS": ['192.168.124.10' ], # List of host names or IPs.
+"HOSTS": ['127.0.0.1'],
  "VIRTUALENV_HOME": "/home/vagrant/", # Absolute remote path for virtualenvs
  "PROJECT_NAME": "blog", # Unique identifier for project
  "REQUIREMENTS_PATH": "requirements/requirements.txt", # Path to pip requirements, relative to project
  "GUNICORN_PORT": 8000, # Port gunicorn will listen on
  "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
  "LIVE_HOSTNAME": "example.com", # Host for public site.
- "REPO_URL": "git@github.com:tabcina/blogTabs.git",
+ "REPO_URL": "git@github.com:tabcina/meinBlog.git",
  "DB_PASS": "default", # Live database password
  "ADMIN_PASS": "default", # Live admin user password
  "SECRET_KEY": SECRET_KEY
